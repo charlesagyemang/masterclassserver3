@@ -69,6 +69,7 @@
 			var section127Passarray = ["q5pyqig2aafn", "xfsfyvap75se", "opk747ruirjb", "mzgdowtx2n9r", "uhysczwcv5wr", "r8ded4pz8n3v", "5pzxbtbtq6de", "jp2mj66s7rkn", "2684wxfqp7gm", "25e3cgy6mcxp", "u634o3o5srea", "95j4mrt6xnex", "p4gx4y3kf6bv", "skzf86jqyuko", "3hjzgigtneps", "df6ckg2jv7u8", "3q46fxdanm74", "i6dpcasauvks", "8dw4ukz69mnj", "wpunxv7jjj35", "r2nukfvtxygf", "5gqzihj3kfdr", "rk3oc8wxovi3", "qrq7243trhy9", "d7ha6stz45ra", "7goudnyuj8hy", "fkpfnfou5dw8", "b7p2jj3oja6y", "qijnksvw2ops", "m7anxshfq3ze", "o8634k2dxe2j", "xh34hode357z", "h9srexsijjno", "n9gwxk6pof23", "da9fxdh8i4wi", "hnucm533mnti", "w427jt7fbpsz", "fywoeq4b9wcz", "95svc2tzzbyd", "hg8pmef9ftjd", "xha9j6vydptj", "ayczbh82fsaf", "72rnz9oi59a8", "r3zt5sdroa3v", "gzn85bddxbqq", "bf6vmjarmr3n", "3si6bpgvfnbn", "cpaq73v7dqis", "utc43xbinvfb", "y3i96asz8ayh", "5p2yt9s532uz", "jfih8vekvoeb", "rw9wqpi8f544", "qnb3d5ene6am", "yv76hmzn9rfc", "jbm8baxtnx2x", "5hsxcfsnk8kk", "aejqe7arvnch", "irsazcijgsg5", "bf7jss3qd7yd"]
 
 			$("#btnsection1").unbind("click").click(function(){
+				$this =  $(this)
 				
 				let passEntered = $("#field1Pass").val();
 				let n    = section127Passarray.includes(passEntered);
@@ -81,6 +82,8 @@
 					window.location.href='fulllinks.html'
 				} else {
 					alert("Wrong Pin. Please Try Agian Or Report This Issue To Admin via whatsapp on @+233 277 11 99 19")
+					
+					$this.text("Wrong Pin. Please Reloac And Try Agian Or Report This Issue To Admin via whatsapp on @+233 277 11 99 19")
 				};
 			})
 			

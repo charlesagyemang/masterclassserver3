@@ -69,6 +69,7 @@
 
 
 			$("#btnsection1").unbind("click").click(function(){
+				$this =  $(this)
 				
 				let passEntered = $("#field1Pass").val();
 				let n    = section2PassArray.includes(passEntered);
@@ -81,6 +82,8 @@
 					window.location.href='fulllinks.html'
 				} else {
 					alert("Wrong Pin. Please Try Agian Or Report This Issue To Admin via whatsapp on @+233 277 11 99 19")
+					
+				$this.text("Wrong Pin. Please Reloac And Try Agian Or Report This Issue To Admin via whatsapp on @+233 277 11 99 19")
 				};
 			})
 			
