@@ -41,7 +41,9 @@
           Enter Secret Code To Gain Access:<br>
 		  <input id="field1Pass" type="text" name="firstname"><br>
 		  <br>
-		  <button id="btnsection1" class="w3-btn w3-black">Submit</button>
+		  <button id="btnsection1" class="w3-btn w3-black">Submit</button> 
+
+			<a href="/">Back To Home Page</a>
 
 		  
 	    </div>
@@ -63,9 +65,10 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
-			var section1PassArray = [
-				"Banana", "Orange", "Apple", "Mango"
-			];
+
+			var section1PassArray = ["aamscpsu", "aawvbvus", "aazowccx", "abnpkxrn", "acdhcrvt", "ackqerht", "acuohosi", "aeikftkc", "aerrwohq", "afquobqf", "agbmtdiu", "agbowfmq", "aiahkmjh", "ajcpueng", "ajyuoqeu", "aknwhqmz", "amiisucu", "amxupytx", "aniktsys", "aoirjunt", "aorkdaqw", "aquzczbm", "aspdhzsn", "atqndipd", "avkedncg", "aytpimzz", "bawqgaff", "bbctcuuc", "bbkcufxz", "bbsqbbiq", "bbuurbmw", "bcaqqefd", "bcmcnfrt", "bcpmtrsk", "bdzvuhnh", "beubuwot", "bheuvrkw", "bhvqdcfy", "bipquocf", "bkbcogcs", "bmnhybqf", "bnmpmmms", "bnznpwxm", "bovngrhb", "bpkuvibk", "bqkddwxf", "brimasyo", "bvttsbhf", "bvvactjk", "bwinwevi", "bxotcjgm", "bzbtkqwg", "bzjchyrr", "bzmbrpbg", "cahtroiw", "cakgqrjf", "cassbvtq", "cbysatvq", "cctgsrju", "cdbgefkk", "ceasqjpi", "cemeyuin", "cfwpgbhi", "cfznjkdq", "chxhhtdn", "cjoerapy", "cjozrixc", "cjqznynv", "ckhsvnqx", "cmcbzhaw", "cnejqcuu", "cojecmct", "cqeuoetf", "cqzindrt", "crfojexh", "cspwhgsn", "ctgiaehc", "ctiwazfp", "cugtvdzr", "cviqjbow", "cypdrvzi", "czdfcpis", "czpsxdgv", "dabiqghz", "dahwtqas", "dbebehkm", "ddpbdrwq", "ddthkdus", "degycygo", "dekgdago", "denzernx", "dgidmvia", "dhaeiuwz", "diovetow", "diykzocx", "djezmzka", "dkvihqfi", "dmguvizz", "doqcmcpd", "dpiodgwq"]
+
+
 
 			$("#btnsection1").unbind("click").click(function(){
 				
@@ -74,7 +77,7 @@
 				
 				if (n) {
 					console.log("Yo Have access")
-					localStorage.setItem("status","GRANTED_SECTION_WANU")
+					localStorage.setItem("status","GRANTED_SECTION_WANU1")
 					console.log(localStorage.status)
 					// redirect to path
 					window.location.href='fulllinks.html'

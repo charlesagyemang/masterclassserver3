@@ -32,11 +32,18 @@
 	    </div>
 	    <div class="col-sm-4">
 	  	<br>
-	  		<a href = "/Section2">
-			  	<div class="w3-green w3-hover-shadow w3-padding-64 w3-center" style="width:70%">
-			  		<h2>Section 7 </h2>
-				</div>
-	        </a>
+	  		
+		  	<div class="w3-green w3-hover-shadow w3-padding-64 w3-center" style="width:70%">
+		  		<h2>Section 7 </h2>
+			</div>
+	    
+			<br><br>
+          Enter Secret Code To Gain Access:<br>
+		  <input id="field1Pass" type="text" name="firstname"><br>
+		  <br>
+		  <button id="btnsection1" class="w3-btn w3-black">Submit</button>
+
+		  
 	    </div>
 	    
 	    <div class="col-sm-4">
@@ -47,7 +54,6 @@
 		</div>
 	  
 
-
 	
 
 	<!-- jQuery library -->
@@ -55,5 +61,32 @@
 
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+
+			var section7PassArray = ["wtsdnzwd", "wurhyrer", "wvaytrpz", "wvnnqwad", "wwbatjne", "wwezynyp", "xatofrdm", "xavbnvbt", "xayysebp", "xbuuipeg", "xcavhpch", "xdougxjy", "xdwfzyqp", "xedbmxsw", "xehiqjku", "xfiaahcm", "xfiqkkeo", "xfnaodzk", "xiikidgr", "xnjyhmor", "xqsnnxqd", "xqwvfuks", "xrfwzzsr", "xrtuzhix", "xsnifnwk", "xspcayqx", "xsqhifbj", "xsrkvake", "xsuyfdqf", "xtkhjzbd", "xundbdtq", "xvucetdb", "xvzqejxy", "xwipevzp", "xwzanapo", "xxapucdn", "xxorouda", "xypksufe", "xzayqymr", "ybfekyaz", "ybvpmppn", "yccyfmhh", "ycsmzwqt", "ydkdgmuc", "yeecpoia", "yeoysdia", "yerxyosw", "yfhmfuym", "yfyeqxev", "ygabdvzp", "yhgqaoxe", "yhqavkmj", "yicvqkmr", "yidbvcya", "yitmyrob", "yjfzesdc", "ykngrxyb", "ymyoqube", "yoawxhhd", "yojiuadw", "yoykuoqx", "ypssdnye", "ypsykrvn", "ypvsdwbh", "ypzbktfm", "yrdkptsa", "yroqacxm", "ysedcpjw", "ysmpriuh", "yuxsineo", "ywgaeero", "ywhbyspu", "yxomqqaf", "zadznuyo", "zasporso", "zbbzzido", "zbfasxjv", "zbumrzto", "zbzoafve", "zddodhmn", "zfdsqnes", "zgtcwfgb", "zhooyafi", "zhsgqpbf", "zicpqgro", "zjgadrpm", "zjibjpkz", "zjrcduqj", "zkrbfvnm", "zksohhgo", "zoasrhdy", "zprmubvx", "zronzogb", "zuahmsqm", "zucbygot", "zvcufork", "zvjbtfba", "zwprriqj", "zyheyxht", "zzvifnqx"]
+
+
+		
+
+			$("#btnsection1").unbind("click").click(function(){
+				
+				let passEntered = $("#field1Pass").val();
+				let n    = section7PassArray.includes(passEntered);
+				
+				if (n) {
+					console.log("Yo Have access")
+					localStorage.setItem("status","GRANTED_SECTION_WANU")
+					console.log(localStorage.status)
+					// redirect to path
+					window.location.href='fulllinks.html'
+				} else {
+					alert("Wrong Pin. Please Try Agian Or Report This Issue To Admin via whatsapp on @+233 277 11 99 19")
+				};
+			})
+			
+		})
+	</script>
 </body>
 </html>
